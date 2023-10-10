@@ -1,24 +1,31 @@
-//declare and define function, input output machines
-function calculateBMI(){
+
+function BMI (){
+    let x = (weight / ((height * height)/10000)) 
+    console.log (weight / ((height * height)/10000))
+
+    if ( x <= "18.5") {
+        console.log("You are underweight.");
+
+    } else if ( x > "18.5"  && x  <= "24.9") {
+         console.log("You are healthy weight.");
+
+    } else if ( x >= "25" && x <= "29.9") {
+        console.log("You are unhealthy weight.");
+    } else if ( x >= "30") {
+        console.log("You are obese weight.")
+    }
 
 }
-//run the function
 
-
-function BMI (x){
-    console.log((b / (a * a)) * 703)
-}
- 
 
 //need to convert the String to a Number 
-let a = Number(prompt("Your Height (Inches)"));
-let b = Number(prompt("Your Weight (Pounds)"));
+let height = Number(prompt("Your Height (Centimeters)"));
+let weight = Number(prompt("Your Weight (Kilograms)"));
+let name = (prompt("Your Name"));
 
 
-
-BMI(a)
-BMI(b)
-
+BMI(height)
+BMI(weight)
 
 
 
