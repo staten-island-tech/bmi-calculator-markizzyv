@@ -17,7 +17,6 @@ function BMI (){
 
 }
 
-
 //need to convert the String to a Number 
 let height = Number(prompt("Your Height (Centimeters)"));
 let weight = Number(prompt("Your Weight (Kilograms)"));
